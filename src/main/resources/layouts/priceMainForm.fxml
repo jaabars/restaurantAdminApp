@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.megacom.restaurantAdminApp.controllers.priceCtrl.PriceMainFormCtrl">
+   <center>
+      <TableView fx:id="tblViewPrice" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colmPrice" prefWidth="71.0" text="Цена" />
+          <TableColumn fx:id="colmStartDate" prefWidth="166.0" text="День назначения" />
+            <TableColumn fx:id="colmEndDate" prefWidth="227.0" text="День окончания" />
+            <TableColumn fx:id="colmDish" prefWidth="135.0" text="Блюдо" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Редактировать">
+            <items>
+              <MenuItem fx:id="mnAdd" mnemonicParsing="false" onAction="#onMenuItmClicked" text="Добавить" />
+                  <MenuItem fx:id="mnEdit" mnemonicParsing="false" onAction="#onMenuItmClicked" text="Редактировать" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Справка">
+            <items>
+              <MenuItem mnemonicParsing="false" text="О приложении" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

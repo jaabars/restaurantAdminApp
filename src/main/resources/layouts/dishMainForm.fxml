@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.megacom.restaurantAdminApp.controllers.dishCtrl.DishMainFormCtrl">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Редактировать">
+            <items>
+              <MenuItem fx:id="mnAdd" mnemonicParsing="false" onAction="#onMenuItemClicked" text="Добавить" />
+                  <MenuItem fx:id="mnEdit" mnemonicParsing="false" onAction="#onMenuItemClicked" text="Редактировать" />
+                  <MenuItem fx:id="mnDeactivate" mnemonicParsing="false" onAction="#onMenuItemClicked" text="Деактивировать" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="tblViewDish" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colmNum" prefWidth="75.0" text="#" />
+          <TableColumn fx:id="colmName" prefWidth="251.0" text="Название блюда" />
+            <TableColumn fx:id="colmSize" minWidth="0.0" text="Порция" />
+            <TableColumn fx:id="colmMenu" maxWidth="315.0" prefWidth="193.0" text="Mеню ресторана " />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
