@@ -1,5 +1,8 @@
 package kg.megacom.restaurantAdminApp.models;
 
+import lombok.Data;
+
+@Data
 public class Dish {
     private Long id;
     private String name;

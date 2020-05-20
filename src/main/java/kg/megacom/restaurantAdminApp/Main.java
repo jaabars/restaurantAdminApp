@@ -12,9 +12,9 @@ public class Main  extends Application {
     }
 
     public void start(Stage primaryStage) throws Exception {
-        Parent root= FXMLLoader.load(getClass().getResource("/layouts/restaurantMainForm.fxml"));
-        primaryStage.setTitle("User App");
-        primaryStage.setScene(new Scene(root));
+        Parent root= FXMLLoader.load(getClass().getResource("/layouts/adminMainForm.fxml"));
+        primaryStage.setTitle("Admin App");
+        primaryStage.setScene(new Scene(root,600,400));
         primaryStage.show();
     }
 }

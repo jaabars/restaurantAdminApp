@@ -7,7 +7,8 @@ public class Customer {
     private Long id;
     private String name;
     private String address;
-    private String houseNo;
+    private int houseNo;
     private int flatNo;
     private String phone;
+    private String password;
 }

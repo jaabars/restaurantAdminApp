@@ -54,6 +54,7 @@ public class RestaurantMainController {
     void onMenuItemClicked(ActionEvent event) {
         if (event.getSource().equals(mnAdd)) {
             Stage stage = new Stage();
+            stage.setTitle("Restaurant add window ");
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/layouts/restaurantAddForm.fxml"));
             try {
                 loader.load();
@@ -75,6 +76,7 @@ public class RestaurantMainController {
             stage.show();
         } else if (event.getSource().equals(mnEdit)) {
             Stage stage = new Stage();
+            stage.setTitle("Restaurant edit form");
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/layouts/restaurantEditForm.fxml"));
                 loader.load();
